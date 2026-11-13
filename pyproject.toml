@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gamesneverdie-client"
+version = "0.1.0"
+description = "A lightweight, unofficial Games Never Die API client and JSON CLI."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "tetsuya-dev-jp"}]
+dependencies = []
+
+[project.scripts]
+gnd = "gamesneverdie.cli:main"
+
+[project.urls]
+Repository = "https://github.com/tetsuya-dev-jp/gamesneverdie-client"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gamesneverdie"]
